@@ -1,4 +1,5 @@
 {
+  "homepage": "https://D-VIDE.github.io",
   "name": "nextjs-notion-starter-kit",
   "version": "2.0.0",
   "private": true,
@@ -14,6 +15,8 @@
     "build": "next build",
     "start": "next start",
     "deploy": "vercel deploy",
+    "predeploy-gh": "npm run build",
+    "deploy-gh": "gh-pages -d build",
     "deps": "run-s deps:*",
     "deps:update": "[ -z $GITHUB_ACTIONS ] && yarn add notion-client notion-types notion-utils react-notion-x || echo 'Skipping deps:update on CI'",
     "deps:link": "[ -z $GITHUB_ACTIONS ] && yarn link notion-client notion-types notion-utils react-notion-x || echo 'Skipping deps:link on CI'",
