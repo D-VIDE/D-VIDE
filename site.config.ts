@@ -11,7 +11,7 @@ export default siteConfig({
   // basic site info (required)
   name: 'D/VIDE',
   domain: 'D-VIDE.github.io',
-  author: 'Travis Fischer',
+  author: 'kick-snare',
 
   // open graph metadata (optional)
   description: 'D/VIDE landing page',
